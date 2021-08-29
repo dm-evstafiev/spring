@@ -11,4 +11,10 @@
           class="org.example.springtest.ClassicalMusic">
     </bean>
 
+    <bean id="musicPlayer"
+          class="org.example.springtest.MusicPlayer">
+        <property name="music" ref="musicBean"/>
+        <property name="name" value="TOm" />
+    </bean>
+
 </beans>
